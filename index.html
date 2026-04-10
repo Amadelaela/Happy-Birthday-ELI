@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Section 1: Hero ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">This is for you</h1>
+      <p class="hero-sub">Something special is almost ready.</p>
+      <div class="hero-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <polyline points="19 12 12 19 5 12"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Section 2: Countdown ────────────────────────────────────────── -->
+  <section id="countdown-section">
+    <p class="section-eyebrow">counting down to</p>
+    <p class="countdown-target-label">April 11</p>
+
+    <!-- Single big countdown -->
+    <div class="countdown-main">
+      <div class="digit-group">
+        <span class="digit" id="main-days">00</span>
+        <span class="digit-label">days</span>
+      </div>
+      <span class="digit-sep">:</span>
+      <div class="digit-group">
+        <span class="digit" id="main-hours">00</span>
+        <span class="digit-label">hours</span>
+      </div>
+      <span class="digit-sep">:</span>
+      <div class="digit-group">
+        <span class="digit" id="main-mins">00</span>
+        <span class="digit-label">mins</span>
+      </div>
+      <span class="digit-sep">:</span>
+      <div class="digit-group">
+        <span class="digit" id="main-secs">00</span>
+        <span class="digit-label">secs</span>
+      </div>
+    </div>
+
+    <!-- Live timezone clocks -->
+    <div class="tz-row">
+      <div class="tz-card">
+        <span class="tz-flag">🇨🇭</span>
+        <span class="tz-name">Switzerland</span>
+        <span class="tz-clock" id="clock-ch">--:--:--</span>
+      </div>
+      <div class="tz-divider"></div>
+      <div class="tz-card">
+        <span class="tz-flag">🇮🇱</span>
+        <span class="tz-name">Israel</span>
+        <span class="tz-clock" id="clock-il">--:--:--</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Section 4: Unlock Prompt (hidden until countdown = 0) ────────── -->
+  <section id="unlock-section" class="hidden">
+    <p class="unlock-ready">Ready?</p>
+    <button id="unlock-btn" class="btn-unlock">Unlock</button>
+  </section>
+
+  <!-- ─── Section 5: Hidden Content ───────────────────────────────────── -->
+  <section id="content-section" class="hidden">
+    <div class="content-frame">
+      <!-- ✦ Replace this placeholder with your actual content ✦ -->
+      <div class="content-placeholder">
+        <span class="placeholder-symbol">✦</span>
+      </div>
+      <!-- ✦ End placeholder ✦ -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
