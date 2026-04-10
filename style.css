@@ -281,11 +281,6 @@ section {
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-.placeholder-symbol {
-  font-size: 2.5rem;
-  color: var(--muted-2);
-  user-select: none;
-}
 
 
 /* ─── Transitions ───────────────────────────────────────────────────────── */
